@@ -8,7 +8,7 @@
 ## Prepare
 
 ```
-sudo apt install gcc-aarch64-linux-gnu build-essential flex bison libssl-dev device-tree-compiler qemu-user-static
+sudo apt install gcc-aarch64-linux-gnu build-essential flex bison libssl-dev device-tree-compiler qemu-user-static device-tree-compiler bc python-is-python3
 ```
 
 ## Build
