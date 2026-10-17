@@ -99,9 +99,9 @@ fi
 if grep -Eq "(^_|CONFIG_TARGET_ALL_NO_SEC_BOOT=y)" "$ATF_DIR/configs/$ATF_CFG"; then
 	if [ -f "$ATF_DIR/build/$SOC/release/bl2.img" ]; then
 		BL2_NAME="${SOC}_${BOARD}-bl2"
-		echo "Copy built BL2 Burn image only!"
+		echo "Copy built BL2 Burn image only! - output/$BL2_NAME.img"
 		cp -f "$ATF_DIR/build/$SOC/release/bl2.img" "output/$BL2_NAME.img"
-		echo "Copy built BL2 MTK Uart Boot image only!"
+		echo "Copy built BL2 MTK Uart Boot image only! - output/$BL2_NAME.bin"
 		cp -f "$ATF_DIR/build/$SOC/release/bl2.bin" "output/$BL2_NAME.bin"
 		echo "$BL2_NAME build done"
 	else
